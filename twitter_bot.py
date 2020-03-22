@@ -3,6 +3,7 @@ from requests_oauthlib import OAuth1Session
 from http import HTTPStatus
 from datetime import datetime
 
+
 def post_tweet(body):
     # 認証処理
     twitter = OAuth1Session(
@@ -17,6 +18,7 @@ def post_tweet(body):
         print("Successfully posted")
     else:
         print(f"Failed: {res.status_code}")
+
 
 def main():
     # body = "テスト投稿2"
