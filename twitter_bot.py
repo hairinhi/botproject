@@ -15,7 +15,7 @@ def post_tweet(body):
 
     # エラー処理
     if res.status_code == HTTPStatus.OK:
-        print("Successfuly posted")
+        print("Successfully posted")
     else:
         print(f"Failed: {res.status_code}")
 
